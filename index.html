@@ -619,10 +619,16 @@
   <!-- Project Detail Modal -->
   <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-backdrop" id="modalBackdrop"></div>
-    <div class="modal-dialog">
+    <div class="modal-dialog project-dialog">
       <button class="modal-close" id="modalClose" aria-label="Đóng chi tiết dự án">&times;</button>
       <div class="modal-media">
-        <img id="modalImage" src="" alt="" />
+        <div class="modal-stage">
+          <img id="modalImage" src="" alt="" />
+          <button type="button" class="gallery-nav gallery-prev" id="galleryPrev" aria-label="Ảnh trước">&#8249;</button>
+          <button type="button" class="gallery-nav gallery-next" id="galleryNext" aria-label="Ảnh tiếp theo">&#8250;</button>
+          <span class="gallery-counter" id="galleryCounter">1 / 4</span>
+        </div>
+        <div class="modal-thumbs" id="modalThumbs" role="listbox" aria-label="Thư viện ảnh dự án"></div>
       </div>
       <div class="modal-body">
         <span class="section-kicker" id="modalCategory"></span>

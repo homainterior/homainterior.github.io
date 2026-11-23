@@ -68,12 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Project Detail Modal (Real HOMA Interior Projects)
+  // 5. Project Detail Modal (Real HOMA Interior Projects with Multi-Photo Gallery)
   const projectsData = [
     {
       title: 'Biệt thự Ngọc Trai – Vinhomes Ocean Park',
       category: 'Biệt thự • Indochine Luxury',
-      image: 'assets/project-ngoctrai.jpg',
+      images: [
+        'assets/project-ngoctrai.jpg',
+        'assets/project-ngoctrai-2.jpg',
+        'assets/project-ngoctrai-3.jpg',
+        'assets/project-ngoctrai-4.jpg'
+      ],
       desc: 'Công trình biệt thự khu Ngọc Trai (Vinhomes Ocean Park) mang đậm tinh thần Đông Dương đương đại. HOMA Interior kết hợp khéo léo tranh hoa sen vẽ tay thủ công, nền gạch bông nghệ thuật, hệ tủ bếp gỗ tối màu phối mây mắt cáo và gạch vảy cá xanh ngọc tạo nên không gian sang trọng đầy hoài niệm.',
       specs: [
         { label: 'Địa điểm', value: 'Vinhomes Ocean Park, Hà Nội' },
@@ -85,7 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: 'Biệt thự Phố Mr. Tùng – Bắc Giang',
       category: 'Nhà phố • Modern Luxury',
-      image: 'assets/project-bacgiang.jpg',
+      images: [
+        'assets/project-bacgiang.jpg',
+        'assets/project-bacgiang-2.jpg',
+        'assets/project-bacgiang-3.jpg',
+        'assets/project-bacgiang-4.jpg'
+      ],
       desc: 'Không gian phòng khách – bếp bề thế khẳng định vị thế gia chủ. Điểm nhấn nằm ở trần kính đen phản chiếu mở rộng chiều cao, đèn chùm vòng đồng nghệ thuật, vách đá tự nhiên kết hợp lò sưởi trang trí và hệ tủ trưng bày hắt sáng LED ấm cúng.',
       specs: [
         { label: 'Địa điểm', value: 'TP. Bắc Giang' },
@@ -97,7 +107,12 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: 'Biệt thự VSIP – Bắc Ninh',
       category: 'Biệt thự • Contemporary Luxury',
-      image: 'assets/project-vsip.jpg',
+      images: [
+        'assets/project-vsip.jpg',
+        'assets/project-vsip-2.jpg',
+        'assets/project-vsip-3.jpg',
+        'assets/project-vsip-4.jpg'
+      ],
       desc: 'Phòng ngủ Master chuẩn phong cách nghỉ dưỡng 5 sao với vách đầu giường bọc da tông champagne tinh tế, hệ tủ áo cánh kính khung nhôm đồng tích hợp đèn cảm biến, bàn trang điểm đường cong mềm mại và cửa kính lớn đón trọn ánh sáng ban mai.',
       specs: [
         { label: 'Địa điểm', value: 'VSIP Từ Sơn, Bắc Ninh' },
@@ -109,7 +124,12 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: 'Căn hộ Vinhomes Smart City',
       category: 'Chung cư • Modern Minimalist',
-      image: 'assets/project-smartcity.jpg',
+      images: [
+        'assets/project-smartcity.jpg',
+        'assets/project-smartcity-2.jpg',
+        'assets/project-smartcity-3.jpg',
+        'assets/project-smartcity-4.jpg'
+      ],
       desc: 'Giải pháp tối ưu diện tích thông minh cho căn hộ chung cư hiện đại: không gian khách – ăn – bếp liên thông liền mạch, tông màu trung tính nhẹ nhàng kết hợp sàn gỗ vân ấm và hệ tủ giày – tủ bếp kịch trần gọn gàng tuyệt đối.',
       specs: [
         { label: 'Địa điểm', value: 'Vinhomes Smart City, Hà Nội' },
@@ -121,7 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: 'Căn hộ CT2 – Nguyễn Chánh',
       category: 'Chung cư • Warm Contemporary',
-      image: 'assets/project-ct2.jpg',
+      images: [
+        'assets/project-ct2.jpg',
+        'assets/project-ct2-2.jpg',
+        'assets/project-ct2-3.jpg',
+        'assets/project-ct2-4.jpg'
+      ],
       desc: 'Không gian sống ấm cúng dành cho gia đình đa thế hệ tại khu vực Cầu Giấy. HOMA Interior sử dụng gam gỗ nâu óc chó sang trọng làm chủ đạo, cân bằng bằng mảng tường sáng và điểm nhấn gương tròn phát sáng trung tâm khu vực bàn ăn.',
       specs: [
         { label: 'Địa điểm', value: 'CT2 Nguyễn Chánh, Cầu Giấy, Hà Nội' },
@@ -133,7 +158,12 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: 'Văn phòng Asilla – Duy Tân',
       category: 'Văn phòng • Modern Tech Office',
-      image: 'assets/project-asilla.jpg',
+      images: [
+        'assets/project-asilla.jpg',
+        'assets/project-asilla-2.jpg',
+        'assets/project-asilla-3.jpg',
+        'assets/project-asilla-4.jpg'
+      ],
       desc: 'Thiết kế không gian làm việc sáng tạo cho doanh nghiệp công nghệ Nhật Bản tại phố Duy Tân. Bố cục mở linh hoạt giúp tăng khả năng kết nối đội ngũ, kết hợp hệ đèn tuyến tính chống chói, bồn cây xanh nội thất và các phòng họp kính cách âm chuyên nghiệp.',
       specs: [
         { label: 'Địa điểm', value: 'Phố Duy Tân, Cầu Giấy, Hà Nội' },
@@ -148,6 +178,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalBackdrop = document.getElementById('modalBackdrop');
   const modalClose = document.getElementById('modalClose');
   const modalImage = document.getElementById('modalImage');
+  const modalThumbs = document.getElementById('modalThumbs');
+  const galleryPrev = document.getElementById('galleryPrev');
+  const galleryNext = document.getElementById('galleryNext');
+  const galleryCounter = document.getElementById('galleryCounter');
   const modalCategory = document.getElementById('modalCategory');
   const modalTitle = document.getElementById('modalTitle');
   const modalDesc = document.getElementById('modalDesc');
@@ -155,11 +189,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalConsultBtn = document.getElementById('modalConsultBtn');
   const clientNote = document.getElementById('clientNote');
 
+  let currentImages = [];
+  let currentImageIdx = 0;
+
+  const renderGallerySlide = (idx) => {
+    if (!currentImages.length) return;
+    currentImageIdx = (idx + currentImages.length) % currentImages.length;
+    modalImage.src = currentImages[currentImageIdx];
+    galleryCounter.textContent = `${currentImageIdx + 1} / ${currentImages.length}`;
+
+    modalThumbs.querySelectorAll('.modal-thumb-btn').forEach((btn, i) => {
+      btn.classList.toggle('active', i === currentImageIdx);
+      btn.setAttribute('aria-selected', String(i === currentImageIdx));
+    });
+  };
+
   const openModal = (index) => {
     const item = projectsData[index];
     if (!item) return;
 
-    modalImage.src = item.image;
+    currentImages = item.images || [];
+    currentImageIdx = 0;
+
     modalImage.alt = item.title;
     modalCategory.textContent = item.category;
     modalTitle.textContent = item.title;
@@ -167,6 +218,22 @@ document.addEventListener('DOMContentLoaded', () => {
     modalSpecs.innerHTML = item.specs
       .map((s) => `<div><span>${s.label}</span><strong>${s.value}</strong></div>`)
       .join('');
+
+    modalThumbs.innerHTML = currentImages
+      .map(
+        (src, i) => `
+          <button type="button" class="modal-thumb-btn${i === 0 ? ' active' : ''}" data-slide="${i}" aria-label="Xem ảnh ${i + 1}" aria-selected="${i === 0}">
+            <img src="${src}" alt="${item.title} - ảnh ${i + 1}" loading="lazy" />
+          </button>
+        `
+      )
+      .join('');
+
+    modalThumbs.querySelectorAll('.modal-thumb-btn').forEach((btn) => {
+      btn.addEventListener('click', () => renderGallerySlide(Number(btn.dataset.slide)));
+    });
+
+    renderGallerySlide(0);
 
     modalConsultBtn.onclick = () => {
       closeModal();
@@ -186,6 +253,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   };
 
+  if (galleryPrev) galleryPrev.addEventListener('click', () => renderGallerySlide(currentImageIdx - 1));
+  if (galleryNext) galleryNext.addEventListener('click', () => renderGallerySlide(currentImageIdx + 1));
+
   projectCards.forEach((card) => {
     card.addEventListener('click', () => openModal(Number(card.dataset.projectId)));
   });
@@ -194,6 +264,10 @@ document.addEventListener('DOMContentLoaded', () => {
   modalBackdrop.addEventListener('click', closeModal);
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    if (modal.classList.contains('open')) {
+      if (e.key === 'ArrowLeft') renderGallerySlide(currentImageIdx - 1);
+      if (e.key === 'ArrowRight') renderGallerySlide(currentImageIdx + 1);
+    }
     if (e.key === 'Escape' && articleModal && articleModal.classList.contains('open')) closeArticleModal();
   });
 
