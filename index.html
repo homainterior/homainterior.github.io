@@ -27,6 +27,7 @@
         <a href="#dich-vu">Dịch vụ</a>
         <a href="#du-an">Dự án</a>
         <a href="#quy-trinh">Quy trình</a>
+        <a href="#xu-huong">Tạp chí</a>
         <a href="#du-toan">Dự toán</a>
       </nav>
 
@@ -55,6 +56,7 @@
         <a href="#dich-vu" class="mobile-link">Dịch vụ</a>
         <a href="#du-an" class="mobile-link">Dự án tiêu biểu</a>
         <a href="#quy-trinh" class="mobile-link">Quy trình làm việc</a>
+        <a href="#xu-huong" class="mobile-link">Tạp chí &amp; Xu hướng</a>
         <a href="#du-toan" class="mobile-link">Dự toán nhanh</a>
         <a href="#lien-he" class="mobile-link">Liên hệ tư vấn</a>
       </nav>
@@ -229,76 +231,107 @@
       <div class="container">
         <div class="section-header reveal">
           <div>
-            <p class="section-kicker">DỰ ÁN TIÊU BIỂU</p>
+            <p class="section-kicker">DỰ ÁN THỰC TẾ TIÊU BIỂU</p>
             <h2 class="section-title">Tác phẩm <em>HOMA Interior</em></h2>
           </div>
 
           <div class="filter-tabs" role="tablist" aria-label="Lọc dự án theo loại hình">
             <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tất cả</button>
-            <button class="filter-btn" data-filter="apartment" role="tab" aria-selected="false">Căn hộ</button>
             <button class="filter-btn" data-filter="villa" role="tab" aria-selected="false">Biệt thự</button>
+            <button class="filter-btn" data-filter="apartment" role="tab" aria-selected="false">Chung cư</button>
             <button class="filter-btn" data-filter="townhouse" role="tab" aria-selected="false">Nhà phố</button>
+            <button class="filter-btn" data-filter="office" role="tab" aria-selected="false">Văn phòng</button>
           </div>
         </div>
 
-        <div class="projects-grid" id="projectsGrid">
-          <!-- Project 1 -->
-          <article class="project-card reveal" data-category="apartment" data-project-id="0">
+        <div class="projects-grid projects-grid-3" id="projectsGrid">
+          <!-- Project 1: Biệt thự Ngọc Trai - Vinhomes Ocean Park -->
+          <article class="project-card reveal" data-category="villa" data-project-id="0">
             <div class="project-thumb">
-              <img src="assets/hero-living.jpg" alt="The Horizon Penthouse" loading="lazy" />
+              <img src="assets/project-ngoctrai.jpg" alt="Biệt thự Ngọc Trai – Vinhomes Ocean Park" loading="lazy" />
               <div class="project-hover">
                 <span class="view-pill">Xem chi tiết</span>
               </div>
             </div>
             <div class="project-meta">
-              <span class="project-type">Căn hộ • 165 m²</span>
-              <h3>The Horizon Penthouse</h3>
-              <p>Phong cách Contemporary Warm Minimalist với đá travertine và gỗ óc chó tự nhiên.</p>
+              <span class="project-type">Biệt thự • Indochine Luxury</span>
+              <h3>Biệt thự Ngọc Trai – Vinhomes Ocean Park</h3>
+              <p>Bản giao hưởng Đông Dương sang trọng với tranh sen vẽ tay, gạch bông cổ điển, gỗ tối màu và mây đan thủ công.</p>
             </div>
           </article>
 
-          <!-- Project 2 -->
-          <article class="project-card reveal" data-category="villa" data-project-id="1">
+          <!-- Project 2: Nhà phố / Biệt thự Mr. Tùng - Bắc Giang -->
+          <article class="project-card reveal" data-category="townhouse" data-project-id="1">
             <div class="project-thumb">
-              <img src="assets/project-kitchen.jpg" alt="Solstice Garden Villa" loading="lazy" />
+              <img src="assets/project-bacgiang.jpg" alt="Biệt thự Phố Mr. Tùng – Bắc Giang" loading="lazy" />
               <div class="project-hover">
                 <span class="view-pill">Xem chi tiết</span>
               </div>
             </div>
             <div class="project-meta">
-              <span class="project-type">Biệt thự • 280 m²</span>
-              <h3>Solstice Garden Villa</h3>
-              <p>Không gian bếp đảo đá cẩm thạch kết hợp hệ tủ gỗ sồi tối màu sang trọng.</p>
+              <span class="project-type">Nhà phố • Modern Luxury</span>
+              <h3>Biệt thự Phố Mr. Tùng – Bắc Giang</h3>
+              <p>Phòng khách đẳng cấp với trần kính phản chiếu, đèn chùm vòng đồng nghệ thuật, vách đá tự nhiên và cầu thang hắt sáng.</p>
             </div>
           </article>
 
-          <!-- Project 3 -->
-          <article class="project-card reveal" data-category="apartment" data-project-id="2">
+          <!-- Project 3: Biệt thự VSIP Bắc Ninh -->
+          <article class="project-card reveal" data-category="villa" data-project-id="2">
             <div class="project-thumb">
-              <img src="assets/project-bedroom.jpg" alt="Serenity Japandi Suite" loading="lazy" />
+              <img src="assets/project-vsip.jpg" alt="Biệt thự VSIP – Bắc Ninh" loading="lazy" />
               <div class="project-hover">
                 <span class="view-pill">Xem chi tiết</span>
               </div>
             </div>
             <div class="project-meta">
-              <span class="project-type">Căn hộ • 110 m²</span>
-              <h3>Serenity Japandi Suite</h3>
-              <p>Phòng ngủ Master tinh giản theo tinh thần Japandi với sơn hiệu ứng và ánh sáng dịu nhẹ.</p>
+              <span class="project-type">Biệt thự • Contemporary Luxury</span>
+              <h3>Biệt thự VSIP – Bắc Ninh</h3>
+              <p>Phòng ngủ Master chuẩn nghỉ dưỡng với hệ tủ kính khung đồng, vách đầu giường bọc da cao cấp và ánh sáng ngập tràn.</p>
             </div>
           </article>
 
-          <!-- Project 4 -->
-          <article class="project-card reveal" data-category="townhouse" data-project-id="3">
+          <!-- Project 4: Chung cư Vinhomes Smart City -->
+          <article class="project-card reveal" data-category="apartment" data-project-id="3">
             <div class="project-thumb">
-              <img src="assets/project-villa.jpg" alt="Lumière Townhouse" loading="lazy" />
+              <img src="assets/project-smartcity.jpg" alt="Căn hộ Vinhomes Smart City – Hà Nội" loading="lazy" />
               <div class="project-hover">
                 <span class="view-pill">Xem chi tiết</span>
               </div>
             </div>
             <div class="project-meta">
-              <span class="project-type">Nhà phố • 220 m²</span>
-              <h3>Lumière Townhouse</h3>
-              <p>Không gian thông tầng ấn tượng với cầu thang uốn cong điêu khắc và điểm nhấn cây xanh.</p>
+              <span class="project-type">Chung cư • Modern Minimalist</span>
+              <h3>Căn hộ Vinhomes Smart City</h3>
+              <p>Không gian khách – bếp liên thông thoáng đãng, bảng màu trung tính ấm áp giúp mở rộng tối đa diện tích sử dụng.</p>
+            </div>
+          </article>
+
+          <!-- Project 5: Chung cư CT2 Nguyễn Chánh -->
+          <article class="project-card reveal" data-category="apartment" data-project-id="4">
+            <div class="project-thumb">
+              <img src="assets/project-ct2.jpg" alt="Căn hộ CT2 – Nguyễn Chánh, Hà Nội" loading="lazy" />
+              <div class="project-hover">
+                <span class="view-pill">Xem chi tiết</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-type">Chung cư • Warm Contemporary</span>
+              <h3>Căn hộ CT2 – Nguyễn Chánh</h3>
+              <p>Ấm cúng và sang trọng với hệ nội thất gỗ óc chó trầm ấm, ánh sáng gián tiếp dịu nhẹ cùng điểm nhấn gương tròn nghệ thuật.</p>
+            </div>
+          </article>
+
+          <!-- Project 6: Văn phòng Asilla Duy Tân -->
+          <article class="project-card reveal" data-category="office" data-project-id="5">
+            <div class="project-thumb">
+              <img src="assets/project-asilla.jpg" alt="Văn phòng Asilla – Duy Tân, Hà Nội" loading="lazy" />
+              <div class="project-hover">
+                <span class="view-pill">Xem chi tiết</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-type">Văn phòng • Modern Tech Office</span>
+              <h3>Văn phòng Asilla – Duy Tân</h3>
+              <p>Không gian làm việc mở chuẩn doanh nghiệp công nghệ Nhật Bản: ánh sáng tuyến tính, mảng xanh và phòng họp kính cách âm.</p>
             </div>
           </article>
         </div>
@@ -344,6 +377,91 @@
             <h3>Nghiệm thu &amp; Bảo hành</h3>
             <p>Vệ sinh công nghiệp, bàn giao chìa khóa trao tay và kích hoạt chế độ bảo hành 24 tháng.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Journal & Interior Design Trends Section -->
+    <section class="section journal-section" id="xu-huong">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <p class="section-kicker">TẠP CHÍ HOMA • GÓC NHÌN KIẾN TRÚC SƯ</p>
+            <h2 class="section-title">Xu hướng &amp; Cẩm nang <em>thiết kế nội thất</em></h2>
+          </div>
+          <p class="section-desc">
+            Cập nhật những trào lưu kiến trúc – nội thất dẫn đầu 2026 và kinh nghiệm thực tế từ đội ngũ KTS HOMA Interior giúp bạn xây dựng tổ ấm bền vững.
+          </p>
+        </div>
+
+        <div class="journal-grid">
+          <article class="article-card reveal" data-article-id="0">
+            <div class="article-thumb">
+              <img src="assets/hero-living.jpg" alt="Xu hướng Quiet Luxury &amp; Warm Minimalism 2026" loading="lazy" />
+              <span class="article-badge">Xu hướng 2026</span>
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span>Phong cách sống</span>
+                <span>•</span>
+                <span>5 phút đọc</span>
+              </div>
+              <h3>Quiet Luxury &amp; Warm Minimalism: Khi sự sang trọng đến từ tĩnh lặng</h3>
+              <p>Thay vì phô trương chi tiết cầu kỳ, giới tinh hoa năm 2026 tìm về những mảng tường đá travertine, gỗ tự nhiên trầm ấm và ánh sáng giàu cảm xúc.</p>
+              <span class="article-readmore">Đọc bài viết &rarr;</span>
+            </div>
+          </article>
+
+          <article class="article-card reveal" data-article-id="1">
+            <div class="article-thumb">
+              <img src="assets/project-ngoctrai.jpg" alt="Nghệ thuật Indochine Đương Đại" loading="lazy" />
+              <span class="article-badge">Biệt thự</span>
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span>Di sản &amp; Đương đại</span>
+                <span>•</span>
+                <span>6 phút đọc</span>
+              </div>
+              <h3>Indochine Đương Đại: Bản giao hưởng Á Đông giữa lòng biệt thự hiện đại</h3>
+              <p>Làm thế nào để giữ trọn hồn cốt Đông Dương với gỗ tối màu, mây đan, gạch bông mà không gian vẫn thoáng nhẹ, tiện nghi và trẻ trung?</p>
+              <span class="article-readmore">Đọc bài viết &rarr;</span>
+            </div>
+          </article>
+
+          <article class="article-card reveal" data-article-id="2">
+            <div class="article-thumb">
+              <img src="assets/project-smartcity.jpg" alt="Thiết kế nội thất chung cư thông minh" loading="lazy" />
+              <span class="article-badge">Chung cư</span>
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span>Giải pháp không gian</span>
+                <span>•</span>
+                <span>4 phút đọc</span>
+              </div>
+              <h3>5 bí quyết thiết kế căn hộ chung cư giúp “nới rộng” không gian gấp rưỡi</h3>
+              <p>Từ bố cục mở liên thông khách – bếp, hệ tủ kịch trần giấu tay nắm cho đến kỹ thuật phân lớp ánh sáng — giải pháp tối ưu cho căn hộ 60–110m².</p>
+              <span class="article-readmore">Đọc bài viết &rarr;</span>
+            </div>
+          </article>
+
+          <article class="article-card reveal" data-article-id="3">
+            <div class="article-thumb">
+              <img src="assets/project-ct2.jpg" alt="Cẩm nang chọn vật liệu nội thất bền đẹp" loading="lazy" />
+              <span class="article-badge">Vật liệu</span>
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span>Kinh nghiệm thi công</span>
+                <span>•</span>
+                <span>6 phút đọc</span>
+              </div>
+              <h3>Cẩm nang chọn vật liệu nội thất bền đẹp 15+ năm theo khí hậu miền Bắc</h3>
+              <p>So sánh chi tiết gỗ óc chó tự nhiên, gỗ công nghiệp MDF lõi xanh chống ẩm An Cường và đá tự nhiên để đầu tư đúng chỗ, tránh ẩm mốc nồm ẩm.</p>
+              <span class="article-readmore">Đọc bài viết &rarr;</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -514,6 +632,29 @@
         <div class="modal-actions">
           <a href="#lien-he" class="btn btn-primary" id="modalConsultBtn">Tư vấn mẫu thiết kế tương tự</a>
           <a href="https://www.facebook.com/homainterior.vn" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Xem thêm trên Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Reader Modal -->
+  <div class="modal" id="articleModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle">
+    <div class="modal-backdrop" id="articleModalBackdrop"></div>
+    <div class="modal-dialog article-dialog">
+      <button class="modal-close" id="articleModalClose" aria-label="Đóng bài viết">&times;</button>
+      <div class="article-modal-hero">
+        <img id="articleModalImage" src="" alt="" />
+      </div>
+      <div class="article-modal-content">
+        <div class="article-modal-meta" id="articleModalMeta"></div>
+        <h3 id="articleModalTitle"></h3>
+        <div class="article-modal-body" id="articleModalBody"></div>
+        <div class="article-modal-cta">
+          <div>
+            <strong>Bạn muốn ứng dụng xu hướng này cho ngôi nhà của mình?</strong>
+            <p>Đội ngũ KTS HOMA Interior sẵn sàng tư vấn phương án phù hợp nhất với diện tích và ngân sách của bạn.</p>
+          </div>
+          <a href="#lien-he" class="btn btn-primary" id="articleConsultBtn">Nhận tư vấn miễn phí</a>
         </div>
       </div>
     </div>

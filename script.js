@@ -68,54 +68,78 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Project Detail Modal
+  // 5. Project Detail Modal (Real HOMA Interior Projects)
   const projectsData = [
     {
-      title: 'The Horizon Penthouse',
-      category: 'Căn hộ Penthouse • Contemporary Minimalist',
-      image: 'assets/hero-living.jpg',
-      desc: 'Không gian phòng khách mở ngập tràn ánh sáng tự nhiên với hệ rèm linen mỏng, sofa vải bouclé dáng cong mềm mại, bàn trà đá travertine nguyên khối và mảng tường gỗ óc chó ấm áp.',
+      title: 'Biệt thự Ngọc Trai – Vinhomes Ocean Park',
+      category: 'Biệt thự • Indochine Luxury',
+      image: 'assets/project-ngoctrai.jpg',
+      desc: 'Công trình biệt thự khu Ngọc Trai (Vinhomes Ocean Park) mang đậm tinh thần Đông Dương đương đại. HOMA Interior kết hợp khéo léo tranh hoa sen vẽ tay thủ công, nền gạch bông nghệ thuật, hệ tủ bếp gỗ tối màu phối mây mắt cáo và gạch vảy cá xanh ngọc tạo nên không gian sang trọng đầy hoài niệm.',
       specs: [
-        { label: 'Diện tích', value: '165 m²' },
-        { label: 'Phong cách', value: 'Warm Minimalist' },
+        { label: 'Địa điểm', value: 'Vinhomes Ocean Park, Hà Nội' },
+        { label: 'Phong cách', value: 'Indochine Luxury' },
         { label: 'Hạng mục', value: 'Thiết kế & Thi công trọn gói' },
-        { label: 'Thời gian', value: '45 ngày' }
+        { label: 'Vật liệu chính', value: 'Gỗ tự nhiên, mây đan, đá Marble' }
       ]
     },
     {
-      title: 'Solstice Garden Villa',
-      category: 'Biệt thự • Modern Luxury',
-      image: 'assets/project-kitchen.jpg',
-      desc: 'Khu vực bếp và phòng ăn trung tâm của biệt thự vườn, nổi bật với đảo bếp đá cẩm thạch mài mờ, hệ tủ gỗ sồi soi rãnh tinh xảo và đèn thả đồng ánh vàng ấm cúng.',
+      title: 'Biệt thự Phố Mr. Tùng – Bắc Giang',
+      category: 'Nhà phố • Modern Luxury',
+      image: 'assets/project-bacgiang.jpg',
+      desc: 'Không gian phòng khách – bếp bề thế khẳng định vị thế gia chủ. Điểm nhấn nằm ở trần kính đen phản chiếu mở rộng chiều cao, đèn chùm vòng đồng nghệ thuật, vách đá tự nhiên kết hợp lò sưởi trang trí và hệ tủ trưng bày hắt sáng LED ấm cúng.',
       specs: [
-        { label: 'Diện tích', value: '280 m²' },
+        { label: 'Địa điểm', value: 'TP. Bắc Giang' },
         { label: 'Phong cách', value: 'Modern Luxury' },
         { label: 'Hạng mục', value: 'Thiết kế & Thi công trọn gói' },
-        { label: 'Thời gian', value: '75 ngày' }
+        { label: 'Vật liệu chính', value: 'Đá tự nhiên, gỗ sồi tối, inox mạ PVD' }
       ]
     },
     {
-      title: 'Serenity Japandi Suite',
-      category: 'Căn hộ Cao cấp • Japandi',
-      image: 'assets/project-bedroom.jpg',
-      desc: 'Phòng ngủ Master mang tinh thần thiền định nhẹ nhàng với giường gỗ sồi thấp, tường sơn hiệu ứng limewash thủ công và ánh sáng sớm lọc qua hệ lam gỗ tự nhiên.',
+      title: 'Biệt thự VSIP – Bắc Ninh',
+      category: 'Biệt thự • Contemporary Luxury',
+      image: 'assets/project-vsip.jpg',
+      desc: 'Phòng ngủ Master chuẩn phong cách nghỉ dưỡng 5 sao với vách đầu giường bọc da tông champagne tinh tế, hệ tủ áo cánh kính khung nhôm đồng tích hợp đèn cảm biến, bàn trang điểm đường cong mềm mại và cửa kính lớn đón trọn ánh sáng ban mai.',
       specs: [
-        { label: 'Diện tích', value: '110 m²' },
-        { label: 'Phong cách', value: 'Japandi Contemporary' },
-        { label: 'Hạng mục', value: 'Thiết kế & Sản xuất đồ gỗ' },
-        { label: 'Thời gian', value: '35 ngày' }
+        { label: 'Địa điểm', value: 'VSIP Từ Sơn, Bắc Ninh' },
+        { label: 'Phong cách', value: 'Contemporary Luxury' },
+        { label: 'Hạng mục', value: 'Thiết kế & Sản xuất nội thất' },
+        { label: 'Vật liệu chính', value: 'Da Microfiber, kính trà, gỗ An Cường' }
       ]
     },
     {
-      title: 'Lumière Townhouse',
-      category: 'Nhà phố • Indochine Minimalist',
-      image: 'assets/project-villa.jpg',
-      desc: 'Giải pháp thông tầng giàu tính điêu khắc giúp đưa ánh sáng tự nhiên vào sâu trong nhà phố, kết hợp cầu thang uốn lượn mềm mại và mảng xanh nội thất đầy sức sống.',
+      title: 'Căn hộ Vinhomes Smart City',
+      category: 'Chung cư • Modern Minimalist',
+      image: 'assets/project-smartcity.jpg',
+      desc: 'Giải pháp tối ưu diện tích thông minh cho căn hộ chung cư hiện đại: không gian khách – ăn – bếp liên thông liền mạch, tông màu trung tính nhẹ nhàng kết hợp sàn gỗ vân ấm và hệ tủ giày – tủ bếp kịch trần gọn gàng tuyệt đối.',
       specs: [
-        { label: 'Diện tích', value: '220 m²' },
-        { label: 'Phong cách', value: 'Đương đại tối giản' },
-        { label: 'Hạng mục', value: 'Cải tạo & Thi công nội thất' },
-        { label: 'Thời gian', value: '60 ngày' }
+        { label: 'Địa điểm', value: 'Vinhomes Smart City, Hà Nội' },
+        { label: 'Phong cách', value: 'Modern Minimalist' },
+        { label: 'Hạng mục', value: 'Thiết kế & Thi công chìa khóa trao tay' },
+        { label: 'Vật liệu chính', value: 'MDF chống ẩm An Cường, đá thạch anh' }
+      ]
+    },
+    {
+      title: 'Căn hộ CT2 – Nguyễn Chánh',
+      category: 'Chung cư • Warm Contemporary',
+      image: 'assets/project-ct2.jpg',
+      desc: 'Không gian sống ấm cúng dành cho gia đình đa thế hệ tại khu vực Cầu Giấy. HOMA Interior sử dụng gam gỗ nâu óc chó sang trọng làm chủ đạo, cân bằng bằng mảng tường sáng và điểm nhấn gương tròn phát sáng trung tâm khu vực bàn ăn.',
+      specs: [
+        { label: 'Địa điểm', value: 'CT2 Nguyễn Chánh, Cầu Giấy, Hà Nội' },
+        { label: 'Phong cách', value: 'Warm Contemporary' },
+        { label: 'Hạng mục', value: 'Thiết kế & Thi công nội thất' },
+        { label: 'Vật liệu chính', value: 'Gỗ óc chó, phào chỉ tinh giản' }
+      ]
+    },
+    {
+      title: 'Văn phòng Asilla – Duy Tân',
+      category: 'Văn phòng • Modern Tech Office',
+      image: 'assets/project-asilla.jpg',
+      desc: 'Thiết kế không gian làm việc sáng tạo cho doanh nghiệp công nghệ Nhật Bản tại phố Duy Tân. Bố cục mở linh hoạt giúp tăng khả năng kết nối đội ngũ, kết hợp hệ đèn tuyến tính chống chói, bồn cây xanh nội thất và các phòng họp kính cách âm chuyên nghiệp.',
+      specs: [
+        { label: 'Địa điểm', value: 'Phố Duy Tân, Cầu Giấy, Hà Nội' },
+        { label: 'Phong cách', value: 'Modern Tech Office' },
+        { label: 'Hạng mục', value: 'Thiết kế & Thi công văn phòng trọn gói' },
+        { label: 'Vật liệu chính', value: 'Gỗ công nghiệp, vách kính cường lực, thảm tấm' }
       ]
     }
   ];
@@ -170,7 +194,127 @@ document.addEventListener('DOMContentLoaded', () => {
   modalBackdrop.addEventListener('click', closeModal);
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    if (e.key === 'Escape' && articleModal && articleModal.classList.contains('open')) closeArticleModal();
   });
+
+  // 5b. Editorial Journal / Articles Reader Modal
+  const articlesData = [
+    {
+      meta: 'XU HƯỚNG 2026 • PHONG CÁCH SỐNG • 5 PHÚT ĐỌC',
+      title: 'Quiet Luxury & Warm Minimalism: Khi sự sang trọng đến từ tĩnh lặng',
+      image: 'assets/hero-living.jpg',
+      body: `
+        <p>Trong năm 2026, khái niệm "nội thất cao cấp" đang có sự chuyển dịch mạnh mẽ. Thay vì những chi tiết mạ vàng phô trương hay phào chỉ rườm rà, các gia chủ hiện đại ngày càng yêu thích tinh thần <strong>Quiet Luxury (Sang trọng thầm lặng)</strong> kết hợp cùng <strong>Warm Minimalism (Tối giản ấm áp)</strong>.</p>
+        <h4>1. Bảng màu đất ấm áp và chất liệu có chiều sâu</h4>
+        <p>Tông trắng lạnh dần nhường chỗ cho các sắc độ tự nhiên như kem đá (alabaster), be ấm, nâu gỗ óc chó và xám cát. Vẻ đẹp của không gian không nằm ở số lượng đồ đạc, mà ở cảm giác chạm tay vào từng bề mặt: vải bouclé mềm mịn, đá travertine mài mờ, gỗ tự nhiên giữ nguyên vân thớ.</p>
+        <h4>2. Ánh sáng đa lớp — "linh hồn" của sự thư thái</h4>
+        <p>Thay vì chỉ dùng đèn tuýp hay đèn trần trắng gắt, các kiến trúc sư tại HOMA Interior ưu tiên thiết kế 3 lớp ánh sáng: ánh sáng tự nhiên qua rèm voan mỏng, ánh sáng hắt khe trần/tủ dịu nhẹ (3000K) và đèn điểm nhấn (accent light) tạo chiều sâu nghệ thuật vào buổi tối.</p>
+        <h4>3. Đầu tư ít nhưng chất lượng vượt thời gian</h4>
+        <ul>
+          <li>Ưu tiên đồ nội thất may đo chuẩn tỷ lệ không gian thay vì mua rời chắp vá.</li>
+          <li>Giảm tối đa chi tiết thừa để việc dọn dẹp nhẹ nhàng và ngôi nhà luôn giữ được vẻ thanh lịch sau 5–10 năm.</li>
+          <li>Tạo khoảng thở thị giác để mỗi khi trở về nhà, bạn thực sự cảm thấy bình yên.</li>
+        </ul>
+      `
+    },
+    {
+      meta: 'BIỆT THỰ • DI SẢN & ĐƯƠNG ĐẠI • 6 PHÚT ĐỌC',
+      title: 'Indochine Đương Đại: Bản giao hưởng Á Đông giữa lòng biệt thự hiện đại',
+      image: 'assets/project-ngoctrai.jpg',
+      body: `
+        <p>Phong cách <strong>Indochine (Đông Dương)</strong> chưa bao giờ lỗi mốt tại Việt Nam, đặc biệt với các công trình biệt thự như dự án khu Ngọc Trai – Vinhomes Ocean Park mà HOMA Interior thực hiện. Tuy nhiên, phiên bản Indochine 2026 đã được "trẻ hóa" tinh tế hơn rất nhiều.</p>
+        <h4>1. Tiết chế họa tiết để không gian thoáng nhẹ</h4>
+        <p>Nếu Indochine truyền thống đôi khi tạo cảm giác nặng nề vì quá nhiều gỗ tối màu, thì Indochine Đương Đại biết cách tiết chế: giữ lại những "chữ ký" đắt giá như khung vòm cong, cánh tủ mây mắt cáo, gạch bông điểm nhấn hay tranh sen vẽ tay — đặt trên nền tường sáng rộng rãi.</p>
+        <h4>2. Kết hợp hài hòa tiện nghi hiện đại</h4>
+        <p>Hệ thiết bị bếp âm tủ, điều hòa âm trần nối ống gió và hệ thống đèn chiếu sáng thông minh được giấu khéo léo trong các đường chỉ trần và hệ tủ gỗ, giúp gia chủ vừa tận hưởng vẻ đẹp hoài cổ, vừa có trải nghiệm sống tiện nghi chuẩn 5 sao.</p>
+        <h4>3. Lời khuyên từ KTS HOMA Interior</h4>
+        <ul>
+          <li>Chọn 1–2 màu nhấn đặc trưng như xanh cổ vịt, vàng mù tạt hoặc xanh ngọc lục bảo thay vì dùng quá nhiều màu nóng.</li>
+          <li>Tận dụng tối đa ánh sáng tự nhiên và mảng xanh nhiệt đới (cây chuối rẻ quạt, cọ cảnh) để làm mềm chất liệu gỗ.</li>
+        </ul>
+      `
+    },
+    {
+      meta: 'CHUNG CƯ • GIẢI PHÁP KHÔNG GIAN • 4 PHÚT ĐỌC',
+      title: '5 bí quyết thiết kế căn hộ chung cư giúp “nới rộng” không gian gấp rưỡi',
+      image: 'assets/project-smartcity.jpg',
+      body: `
+        <p>Với đặc thù diện tích phổ biến từ 55m² đến 110m² tại các đại đô thị như Vinhomes Smart City hay khu vực Mỹ Đình – Cầu Giấy, bài toán lớn nhất của thiết kế nội thất chung cư là làm sao vừa <strong>đủ công năng cho cả gia đình</strong>, vừa <strong>thoáng rộng và có gu</strong>.</p>
+        <h4>5 nguyên tắc vàng HOMA Interior luôn áp dụng:</h4>
+        <ul>
+          <li><strong>Liên thông Khách – Ăn – Bếp:</strong> Loại bỏ các vách ngăn cứng không cần thiết, sử dụng bàn ăn hoặc đảo bếp làm ranh giới mềm giúp ánh sáng từ logia đi xuyên suốt căn hộ.</li>
+          <li><strong>Hệ tủ kịch trần, không tay nắm:</strong> Tận dụng tối đa chiều cao lưu trữ, đồng màu với mảng tường để "tàng hình" khối tủ lớn và tránh bám bụi trên nóc tủ.</li>
+          <li><strong>Nội thất chân thoáng & đường cong mềm:</strong> Sofa, bàn trà có khoảng hở gầm vừa giúp robot hút bụi hoạt động dễ dàng, vừa tạo cảm giác sàn nhà rộng hơn.</li>
+          <li><strong>Bảng màu thống nhất tối đa 3 tông:</strong> 60% màu nền sáng trung tính, 30% màu gỗ ấm, 10% màu nhấn tạo chiều sâu.</li>
+          <li><strong>Gương và kính mở rộng thị giác:</strong> Đặt mảng gương trà hoặc kính sọc ở vị trí hợp lý gần bàn ăn giúp nhân đôi chiều sâu không gian.</li>
+        </ul>
+      `
+    },
+    {
+      meta: 'VẬT LIỆU • KINH NGHIỆM THI CÔNG • 6 PHÚT ĐỌC',
+      title: 'Cẩm nang chọn vật liệu nội thất bền đẹp 15+ năm theo khí hậu miền Bắc',
+      image: 'assets/project-ct2.jpg',
+      body: `
+        <p>Khí hậu miền Bắc có độ ẩm cao vào mùa nồm và nắng nóng gắt vào mùa hè — đây là "bài kiểm tra" khắc nghiệt nhất đối với tuổi thọ đồ nội thất. Chọn đúng vật liệu ngay từ đầu sẽ giúp bạn tiết kiệm hàng trăm triệu đồng chi phí sửa chữa về sau.</p>
+        <h4>1. Gỗ tự nhiên (Óc chó, Sồi Mỹ, Gõ đỏ)</h4>
+        <p>Phù hợp cho không gian biệt thự, căn hộ cao cấp yêu cầu vẻ đẹp sang trọng và độ bền vượt trội. Điều quan trọng nhất là quy trình <strong>tẩm sấy đạt chuẩn độ ẩm 8–12%</strong> để hạn chế tối đa cong vênh, co ngót theo mùa.</p>
+        <h4>2. Gỗ công nghiệp lõi xanh chống ẩm (MDF An Cường)</h4>
+        <p>Lựa chọn tối ưu nhất về thẩm mỹ lẫn ngân sách cho chung cư và văn phòng hiện đại. Bề mặt phủ Melamine, Laminate hoặc Acrylic bóng gương có hàng trăm mã vân gỗ, vân đá thời thượng, không cong vênh và thi công cực kỳ sắc nét.</p>
+        <h4>3. Khu vực ẩm ướt (Tủ bếp dưới, Lavabo)</h4>
+        <ul>
+          <li>Khoang chậu rửa nên ưu tiên dùng <strong>nhựa đặc Picomat / thùng Inox 304</strong> chống nước tuyệt đối 100%.</li>
+          <li>Mặt bàn bếp nên dùng đá thạch anh nhân tạo (Vicostone) hoặc đá nung kết chống ố vàng, chống trầy xước khi nấu nướng hằng ngày.</li>
+          <li>Phụ kiện bản lề, ray trượt nên đầu tư thương hiệu uy tín (Hafele, Blum, Cariny...) để đóng mở êm ái suốt nhiều năm.</li>
+        </ul>
+      `
+    }
+  ];
+
+  const articleModal = document.getElementById('articleModal');
+  const articleModalBackdrop = document.getElementById('articleModalBackdrop');
+  const articleModalClose = document.getElementById('articleModalClose');
+  const articleModalImage = document.getElementById('articleModalImage');
+  const articleModalMeta = document.getElementById('articleModalMeta');
+  const articleModalTitle = document.getElementById('articleModalTitle');
+  const articleModalBody = document.getElementById('articleModalBody');
+  const articleConsultBtn = document.getElementById('articleConsultBtn');
+  const articleCards = document.querySelectorAll('.article-card');
+
+  const openArticleModal = (index) => {
+    const article = articlesData[index];
+    if (!article || !articleModal) return;
+
+    articleModalImage.src = article.image;
+    articleModalImage.alt = article.title;
+    articleModalMeta.textContent = article.meta;
+    articleModalTitle.textContent = article.title;
+    articleModalBody.innerHTML = article.body;
+
+    articleConsultBtn.onclick = () => {
+      closeArticleModal();
+      if (clientNote) {
+        clientNote.value = `Tôi vừa đọc bài viết "${article.title}" và muốn được KTS HOMA tư vấn.`;
+      }
+    };
+
+    articleModal.classList.add('open');
+    articleModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeArticleModal = () => {
+    if (!articleModal) return;
+    articleModal.classList.remove('open');
+    articleModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  articleCards.forEach((card) => {
+    card.addEventListener('click', () => openArticleModal(Number(card.dataset.articleId)));
+  });
+
+  if (articleModalClose) articleModalClose.addEventListener('click', closeArticleModal);
+  if (articleModalBackdrop) articleModalBackdrop.addEventListener('click', closeArticleModal);
 
   // 6. Interactive Cost Estimator
   const estType = document.getElementById('estType');
